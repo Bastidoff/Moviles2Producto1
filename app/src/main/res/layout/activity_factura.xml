@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FacturaActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Factura"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/etcodigo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Código Factura" />
+
+    <EditText
+        android:id="@+id/etfecha"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Fecha" />
+
+    <EditText
+        android:id="@+id/etplaca"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Placa" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:id="@+id/btbuscar"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:textSize="20dp"
+        android:text="Buscar"
+        android:onClick="Buscar"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marca"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/tvmarca"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modelo"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/tvmodelo"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/tvvalor"/>
+
+    <CheckBox
+        android:id="@+id/cbactivo"
+        android:layout_marginTop="5dp"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:enabled="false"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="  Activo" />
+
+    <Button
+        android:id="@+id/btguardar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="Guardar"
+        android:layout_marginTop="3dp"
+        android:text="Guardar"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_marginTop="3dp"
+        android:id="@+id/btconsultar"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:onClick="Consultar"
+        android:textSize="20dp"
+        android:text="Consultar"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_marginTop="3dp"
+        android:id="@+id/btanular"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:onClick="AnularF"
+        android:textSize="18dp"
+        android:text="Anular"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_marginTop="3dp"
+        android:id="@+id/btcancelar"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:textSize="18dp"
+        android:onClick="CancelarF"
+        android:text="Cancelar"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_marginTop="3dp"
+        android:id="@+id/btregresar"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:textSize="18sp"
+        android:onClick="RegresarF"
+        android:text="Regresar"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>
